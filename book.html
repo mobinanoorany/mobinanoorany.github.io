@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Flood Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image-caption {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Campus Flood Assessment through a Web-Interface Powered by AI</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Overview</h2>
+        <p>This project explores the use of AI and GIS technologies to assess and understand student perceptions of flood risks on university campuses. A web-based platform was developed to integrate and visualize flood-related data, empowering users to explore campus vulnerabilities and provide feedback on perceived risks.</p>
+    </section>
+
+    <section>
+        <h2>Data Collection and Preprocessing</h2>
+        <p>We created a dataset of georeferenced maps, satellite imagery, street view images, flood maps, density maps, and digital elevation models (DEMs) from 30 Gulf of Mexico university campuses. Campuses with at least 80% street view coverage were included, resulting in a dataset of 675,486 images.</p>
+        <img src="path_to_figure1.jpg" alt="Filtering campuses based on street view data">
+        <p class="image-caption">Figure 1: Filtering campuses based on street view data availability.</p>
+    </section>
+
+    <section>
+        <h2>Web Interface Design</h2>
+        <p>The web interface integrates macro-level data (e.g., satellite images) and micro-level data (e.g., street view images) to visualize flood risks. Features include:</p>
+        <ul>
+            <li>Remote sensing imagery and student surveys for comprehensive analysis.</li>
+            <li>Interactive clustering using Self-Organizing Maps (SOM).</li>
+            <li>Image categorization with Inception-ResNet-v2 for risk analysis.</li>
+        </ul>
+        <img src="path_to_figure2.jpg" alt="SOM visualization">
+        <p class="image-caption">Figure 2: SOM visualization of campus environments.</p>
+        <img src="path_to_figure3.jpg" alt="Labeling interface per SOM cell">
+        <p class="image-caption">Figure 3: Labeling interface per SOM cell.</p>
+    </section>
+
+    <section>
+        <h2>Workshop and Data Analysis</h2>
+        <p>A two-day workshop with 205 participants gathered insights on campus flood risks. Feedback was analyzed using qualitative and quantitative methods, including:</p>
+        <ul>
+            <li>Word clouds and heatmaps to identify common concerns.</li>
+            <li>Analysis of risks such as falling trees and unsafe walking areas.</li>
+        </ul>
+        <img src="path_to_figure4.jpg" alt="Word cloud of student concerns">
+        <p class="image-caption">Figure 4: Word cloud of student concerns.</p>
+        <img src="path_to_figure5.jpg" alt="Heatmap of keyword correlations">
+        <p class="image-caption">Figure 5: Heatmap of keyword correlations.</p>
+    </section>
+
+    <section>
+        <h2>Key Findings</h2>
+        <p>Students identified significant risks, including falling trees, vehicle damage, and unsafe campus areas during floods. The insights highlight the need for targeted interventions and improved campus disaster preparedness.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Campus Flood Assessment Project</p>
+    </footer>
+</div>
+
+</body>
+</html>
