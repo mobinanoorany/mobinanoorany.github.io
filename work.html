@@ -56,3 +56,79 @@
 
     <div class="page-content">
       <div class="section" id="overview">
+        <div class="container">
+          <h2>Overview</h2>
+          <div class="highlight">
+            <p>This project leverages AI and GIS to assess student perceptions of flood risks on campuses. A web-based platform was developed to analyze, visualize, and understand these risks effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="data">
+        <div class="container">
+          <h2>Data Collection and Preprocessing</h2>
+          <p>A dataset of georeferenced maps, satellite imagery, street view images, flood maps, density maps, and digital elevation models (DEMs) from 30 Gulf of Mexico university campuses was created. A total of 675,486 images were collected with an 80% coverage threshold for street view data.</p>
+          <img src="images/book.png" alt="Filtering campuses based on street view data">
+          <p class="image-caption">Figure 1: Filtering campuses based on street view data availability.</p>
+        </div>
+      </div>
+
+      <div class="section" id="interface">
+        <div class="container">
+          <h2>Web Interface Design</h2>
+          <p>The web interface integrates:</p>
+          <ul>
+            <li>Macro-level data like satellite images.</li>
+            <li>Micro-level data like street view images.</li>
+            <li>Interactive clustering using Self-Organizing Maps (SOM).</li>
+            <li>Object detection via Inception-ResNet-v2 for risk analysis.</li>
+          </ul>
+          <img src="images/book2_som.png" alt="SOM visualization">
+          <p class="image-caption">Figure 2: SOM visualization of campus environments.</p>
+          <img src="images/book3_labeling.png" alt="Labeling interface per SOM cell">
+          <p class="image-caption">Figure 3: Labeling interface per SOM cell.</p>
+        </div>
+      </div>
+
+      <div class="section" id="analysis">
+        <div class="container">
+          <h2>Workshop and Data Analysis</h2>
+          <p>205 participants provided insights into campus flood risks over a two-day workshop. Feedback included:</p>
+          <ul>
+            <li>Identification of risky objects like trees and vehicles.</li>
+            <li>Perceptions of unsafe walking areas.</li>
+            <li>Suggestions for infrastructure improvements.</li>
+          </ul>
+          <img src="images/book4_analysis.png" alt="Word cloud of student concerns">
+          <p class="image-caption">Figure 4: Word cloud of student concerns and Heatmap of keyword correlations.</p>
+        </div>
+      </div>
+
+      <div class="section" id="findings">
+        <div class="container">
+          <h2>Key Findings</h2>
+          <div class="highlight">
+            <p>Common risks identified include:</p>
+            <ul>
+              <li>Falling trees during flooding events.</li>
+              <li>Damage to vehicles and residential properties.</li>
+              <li>Perception of street view images as non-representative of campus safety.</li>
+            </ul>
+            <p>These findings highlight the need for targeted interventions to enhance campus safety and disaster preparedness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="h6 title text-center" style="color:#f2f2f2">Design by: <span style="color:#0ddfdf; font-size:24px">M</span>obina <span style="color:#0ddfdf; font-size:24px">N</span>ourani</div>
+    </footer>
+
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
+</html>
