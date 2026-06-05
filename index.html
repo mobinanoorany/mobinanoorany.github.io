@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobina Noorani — AI Researcher</title>
+  <meta name="description" content="Mobina Noorani — AI researcher building reasoning-capable, multimodal AI systems. Reinforcement learning for foundation models, agentic AI, vision-language models, and computer vision." />
+  <meta name="author" content="Mobina Noorani" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mobina Noorani — AI Researcher" />
+  <meta property="og:description" content="Building intelligent, reasoning-capable AI systems across multiple modalities." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='sans-serif' font-weight='bold' fill='%237c5cff'>M</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== Scroll progress ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== Cursor glow ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-mark">MN</span>
+      <span class="nav__logo-text">Mobina Noorani</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#demo">Live Demo</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Mobina_Noorani_CV.pdf" class="nav__cv" target="_blank" rel="noopener">CV ↗</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <canvas class="hero__canvas" id="neuralCanvas"></canvas>
+    <div class="hero__inner" data-parallax="-0.18">
+      <p class="hero__eyebrow reveal">Gainesville, FL · University of Florida</p>
+      <h1 class="hero__title reveal">
+        Hi, I'm <span class="grad-text">Mobina Noorani</span>
+      </h1>
+      <h2 class="hero__subtitle reveal">
+        I work on <span class="rotator" id="rotator">reasoning-capable AI</span>
+      </h2>
+      <p class="hero__lead reveal">
+        AI researcher focused on intelligent systems that can <strong>perceive, retrieve, and act</strong>
+        across multiple modalities — reinforcement learning for foundation models, agentic AI with
+        tool-use and self-verification, vision-language models, and computer vision.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#projects" class="btn btn--primary">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__social reveal">
+        <a href="https://github.com/mobinanoorany" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=9ZJQCWoAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/mobina-noorani" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:s.noorani@ufl.edu" aria-label="Email">Email</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <span class="section__ghost" data-parallax="0.12" aria-hidden="true">01</span>
+    <div class="section__head reveal reveal--left">
+      <span class="section__num">01</span>
+      <h2 class="section__title">About</h2>
+    </div>
+    <div class="about">
+      <div class="about__text reveal reveal--left">
+        <p>
+          I'm a graduate researcher in Electrical &amp; Computer Engineering at the
+          <strong>University of Florida</strong>, working at the intersection of
+          <strong>reinforcement learning, multimodal learning, and agentic AI</strong>.
+          My goal is to develop AI that can reliably reason and generalize in complex,
+          real-world environments.
+        </p>
+        <p>
+          I currently train large vision-language models that learn <em>when</em> and <em>how</em> to
+          retrieve external knowledge and self-verify their answers, and I build agentic pipelines
+          that connect perception, planning, and human-in-the-loop reasoning. Earlier work spans
+          spatial machine learning, computer vision, and full-stack development.
+        </p>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__num" data-count="6">0</span>
+            <span class="stat__label">Publications &amp; presentations</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="2">0</span>
+            <span class="stat__label">Master's degrees (AI &amp; ECE)</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="7">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Years in AI &amp; ML research</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">4.0</span>
+            <span class="stat__label">GPA across prior degrees</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__edu reveal reveal--right">
+        <h3 class="about__edu-title">Education</h3>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__date">2023 – Present</span>
+            <h4>M.Sc, Electrical &amp; Computer Engineering</h4>
+            <p>University of Florida</p>
+            <span class="timeline__tag">Multimodal Learning · Agentic AI · RL · Computer Vision</span>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">2018 – 2021</span>
+            <h4>M.Sc, Artificial Intelligence</h4>
+            <p>University of Iran · GPA 4.0 / 4.0</p>
+            <span class="timeline__tag">Computer Vision · Neural Network Optimization</span>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">2013 – 2017</span>
+            <h4>B.Sc, Information Technology</h4>
+            <p>University of Semnan · GPA 4.0 / 4.0</p>
+            <span class="timeline__tag">Web Development · Network Engineering</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Research focus ===== -->
+  <section class="section section--alt" id="research">
+    <span class="section__ghost" data-parallax="0.12" aria-hidden="true">02</span>
+    <div class="section__head reveal reveal--left">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Research focus</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+        <h3>RL for Foundation Models</h3>
+        <p>Training large models with GRPO and reward modeling to reason, decide, and self-verify through outcome-only signals.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="11" rx="2"></rect><path d="M12 8V4"></path><circle cx="12" cy="3" r="1.4"></circle><path d="M4 12H2"></path><path d="M22 12h-2"></path><circle cx="9" cy="13" r="1.2"></circle><circle cx="15" cy="13" r="1.2"></circle><path d="M9.5 16h5"></path></svg></div>
+        <h3>Agentic AI</h3>
+        <p>Goal-directed pipelines with tool-use, planning, retrieval, and human-in-the-loop interaction.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
+        <h3>Vision-Language Models</h3>
+        <p>Multimodal systems that perceive images and ground answers in external knowledge for knowledge-intensive VQA.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="9" cy="5" rx="6" ry="2.5"></ellipse><path d="M3 5v6c0 1.4 2.7 2.5 6 2.5"></path><path d="M3 11v6c0 1.4 2.7 2.5 6 2.5"></path><circle cx="17" cy="16" r="3.2"></circle><path d="m21.5 20.5-2-2"></path></svg></div>
+        <h3>RAG &amp; Knowledge Grounding</h3>
+        <p>Dense retrieval over tens of millions of passages, integrated with RL-trained reasoning.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="9 4 3 6 3 20 9 18 15 20 21 18 21 4 15 6 9 4"></polygon><line x1="9" y1="4" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="20"></line></svg></div>
+        <h3>Spatial ML &amp; Regionalization</h3>
+        <p>Spatially-constrained self-organizing maps for real-world hotspot detection and planning.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><circle cx="12" cy="12" r="3.2"></circle></svg></div>
+        <h3>Computer Vision</h3>
+        <p>Object detection and image understanding for vulnerability assessment from satellite &amp; street-view imagery.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section class="section" id="experience">
+    <span class="section__ghost" data-parallax="0.12" aria-hidden="true">03</span>
+    <div class="section__head reveal reveal--left">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Experience</h2>
+    </div>
+    <div class="exp">
+      <div class="exp__item reveal">
+        <div class="exp__meta">
+          <span class="exp__date">Sep 2023 – Present</span>
+          <span class="exp__loc">Gainesville, FL</span>
+        </div>
+        <div class="exp__body">
+          <h3>Graduate Research Assistant</h3>
+          <p class="exp__org">University of Florida</p>
+          <ul>
+            <li>Training a large vision-language model with reinforcement learning (GRPO) to autonomously reason, retrieve external knowledge, and self-verify answers — deployed on multi-GPU HPC with FSDP, vLLM, and Ray.</li>
+            <li>Building an agentic AI pipeline to detect &amp; classify architectural elements (roof condition, sill height, building typology) from satellite and street-view imagery.</li>
+            <li>Created <strong>RepSC-SOM</strong>, a novel spatially-constrained self-organizing map that outperforms standard baselines on real-world contamination hotspot detection.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp__item reveal">
+        <div class="exp__meta">
+          <span class="exp__date">May 2024 – Aug 2025</span>
+          <span class="exp__loc">Gainesville, FL</span>
+        </div>
+        <div class="exp__body">
+          <h3>Teaching Assistant</h3>
+          <p class="exp__org">University of Florida</p>
+          <ul>
+            <li>Supported coursework in Python programming, data preprocessing, and applying ML/DL models to diverse datasets.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp__item reveal">
+        <div class="exp__meta">
+          <span class="exp__date">Jan 2023 – Aug 2023</span>
+          <span class="exp__loc">Alfred, NY</span>
+        </div>
+        <div class="exp__body">
+          <h3>Teaching &amp; Research Assistant</h3>
+          <p class="exp__org">Alfred University</p>
+          <ul>
+            <li>Contributed to quantum ML research — developing and testing quantum algorithms for ML applications.</li>
+            <li>Mentored 30+ students on programming fundamentals.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp__item reveal">
+        <div class="exp__meta">
+          <span class="exp__date">Nov 2018 – Dec 2019</span>
+          <span class="exp__loc">Tehran, Iran</span>
+        </div>
+        <div class="exp__body">
+          <h3>Web &amp; Backend Developer</h3>
+          <p class="exp__org">Pardis Tehran Science &amp; Technology Park</p>
+          <ul>
+            <li>Shipped full-stack web apps (PHP, JavaScript, MySQL); built REST APIs and data-driven backends in a startup with Git-based workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Publications ===== -->
+  <section class="section section--alt" id="publications">
+    <span class="section__ghost" data-parallax="0.12" aria-hidden="true">04</span>
+    <div class="section__head reveal reveal--left">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Publications &amp; presentations</h2>
+    </div>
+    <ul class="pubs">
+      <li class="pub reveal">
+        <div class="pub__venue">Scientific Reports · Nature Portfolio · 2026</div>
+        <h3>Demand-Oriented Regionalization with Local Data</h3>
+        <p class="pub__authors"><strong>M. Noorani</strong>, S. Gao, C. Chen, K. Saldana Ochoa</p>
+        <a class="pub__link" href="https://www.nature.com/articles/s41598-026-47764-4" target="_blank" rel="noopener">Read paper ↗</a>
+      </li>
+      <li class="pub reveal">
+        <div class="pub__venue">NeurIPS 2025 Workshop · UrbanAI · peer-reviewed</div>
+        <h3>Enhancing Demand-Oriented Regionalization with Agentic AI and Local Heterogeneous Data</h3>
+        <p class="pub__authors"><strong>M. Noorani</strong>, S. Gao, C. Chen, K. Saldana Ochoa</p>
+        <a class="pub__link" href="https://openreview.net/forum?id=bKfHuyeI9L" target="_blank" rel="noopener">OpenReview ↗</a>
+      </li>
+      <li class="pub reveal">
+        <div class="pub__venue">SUNY Press · 2026 · Book chapter</div>
+        <h3>Promising Applications for Promoting Disaster Resilience on College Campuses</h3>
+        <p class="pub__authors"><strong>M. Noorani</strong>, C. Chen, K. Smith, F. Fernandez, K. Saldana Ochoa</p>
+        <a class="pub__link" href="https://sunypress.edu/Books/T/The-Digitized-Campus" target="_blank" rel="noopener">Publisher ↗</a>
+      </li>
+      <li class="pub reveal">
+        <div class="pub__venue">SSRN · 2025 · Preprint</div>
+        <h3>From Shading Masks to Surrogate Frameworks: A Topological Approach for Performance-Driven Envelope Design</h3>
+        <p class="pub__authors">J. Gomez Goenaga, S. Gao, A. Monge-Barrio, <strong>S. M. Noorani</strong>, et al.</p>
+        <a class="pub__link" href="https://ssrn.com/abstract=6530551" target="_blank" rel="noopener">SSRN ↗</a>
+      </li>
+      <li class="pub reveal">
+        <div class="pub__venue">Resilient Coasts Summit · Dec 2024 · Poster</div>
+        <h3>Geo-SOM and Hierarchical Clustering for Flood Risk Assessment</h3>
+        <p class="pub__authors"><strong>M. Noorani</strong> et al.</p>
+        <a class="pub__link" href="https://ccs.eng.ufl.edu/optimizing-solutions-for-resilient-coasts-summit/" target="_blank" rel="noopener">Summit ↗</a>
+      </li>
+      <li class="pub reveal">
+        <div class="pub__venue">Symposium on Flooding Adaptation · Oct 2024 · Poster</div>
+        <h3>Campus Flood Assessment through a Web-Interface Powered by AI</h3>
+        <p class="pub__authors"><strong>M. Noorani</strong>, C. Chen, K. Smith, K. Saldana Ochoa</p>
+        <a class="pub__link" href="https://conference.ifas.ufl.edu/flooding/documents/posters/3-Mobina-Noorani-Poster.pdf" target="_blank" rel="noopener">Poster ↗</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <span class="section__ghost" data-parallax="0.12" aria-hidden="true">05</span>
+    <div class="section__head reveal reveal--left">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Featured projects</h2>
+    </div>
+    <div class="projects">
+
+      <article class="project project--feature reveal">
+        <div class="project__tag">Featured · Live demo below</div>
+        <h3>RepSC-SOM — Spatial Regionalization</h3>
+        <p>
+          A novel spatially-constrained self-organizing map with representative initialization,
+          adaptive geographic filtering, and region-growing refinement. Applied to flood-induced
+          <em>E. coli</em> contamination in Jacksonville, it detects hotspots more accurately than
+          census tracts and standard units. Published in <strong>Scientific Reports (Nature)</strong>.
+        </p>
+        <div class="project__tech">
+          <span>Python</span><span>SOM</span><span>Geospatial ML</span><span>Clustering</span>
+        </div>
+        <div class="project__links">
+          <a href="#demo" class="btn btn--primary btn--sm">▶ Try the live demo</a>
+          <a href="https://github.com/mobinanoorany/reps_som_regionalization" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <h3>Multimodal VQA with RL &amp; Agentic Retrieval</h3>
+        <p>
+          A vision-language model trained with GRPO to reason over images, decide when to retrieve
+          external knowledge, and self-verify answers. Multi-turn agentic pipeline with FAISS dense
+          retrieval over 21M Wikipedia passages, on 4× B200 GPUs (FSDP · vLLM · Ray).
+        </p>
+        <div class="project__tech">
+          <span>PyTorch</span><span>GRPO</span><span>vLLM</span><span>FAISS</span><span>Ray</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <h3>Agentic AI Planning Support System</h3>
+        <p>
+          An agentic framework integrating LLM-based reasoning, planning, and human-in-the-loop
+          interaction to generate demand-oriented regionalization for disaster adaptation — built on
+          top of RepSC-SOM with natural-language constraint exploration.
+        </p>
+        <div class="project__tech">
+          <span>LLMs</span><span>Agentic AI</span><span>Human-in-the-loop</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <h3>Campus Vulnerability — Flood Object Detection</h3>
+        <p>
+          An object detection system that identifies and classifies flood-prone architectural
+          features from satellite &amp; street-view imagery for campus vulnerability assessment.
+        </p>
+        <div class="project__tech">
+          <span>OpenCV</span><span>Object Detection</span><span>VLMs</span>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <h3>Facial Trait &amp; Multimodal Sentiment</h3>
+        <p>
+          Deep models predicting 42 psychological attributes from facial images with a novel
+          activation function, plus a multimodal sentiment system combining facial analysis with
+          Twitter text.
+        </p>
+        <div class="project__tech">
+          <span>CNNs</span><span>Multimodal</span><span>TensorFlow</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== Interactive Demo ===== -->
+  <section class="section section--alt" id="demo">
+    <span class="section__ghost" data-parallax="0.12" aria-hidden="true">06</span>
+    <div class="section__head reveal reveal--left">
+      <span class="section__num">06</span>
+      <h2 class="section__title">Interactive demo — Self-Organizing Map</h2>
+    </div>
+    <div class="demo-wrap">
+    <p class="demo__intro reveal">
+      Explore the work behind my
+      <a href="https://github.com/mobinanoorany/reps_som_regionalization" target="_blank" rel="noopener">RepSC-SOM</a>
+      regionalization research two ways — a <strong>quick in-browser demo</strong> of the core
+      Self-Organizing Map idea, or the <strong>full Regionalization Studio app</strong> I built, running live.
+    </p>
+
+    <div class="demo-tabs reveal" role="tablist">
+      <button class="demo-tab is-active" data-tab="quick" role="tab" aria-selected="true">⚡ Quick browser demo</button>
+      <button class="demo-tab" data-tab="live" role="tab" aria-selected="false">▶ Full live app</button>
+    </div>
+
+    <!-- Panel 1: quick JS demo -->
+    <div class="demo-panel is-active" id="tab-quick" role="tabpanel">
+      <div class="demo">
+        <div class="demo__canvas-wrap">
+          <canvas id="somCanvas" width="640" height="480"></canvas>
+          <div class="demo__hint" id="somHint">Click / drag on the canvas to scatter data points</div>
+        </div>
+
+        <div class="demo__panel">
+          <div class="demo__control">
+            <label>Grid size <span id="gridVal">8 × 8</span></label>
+            <input type="range" id="gridSize" min="3" max="14" value="8" />
+          </div>
+          <div class="demo__control">
+            <label>Learning rate <span id="lrVal">0.30</span></label>
+            <input type="range" id="learnRate" min="5" max="80" value="30" />
+          </div>
+          <div class="demo__control">
+            <label>Neighborhood radius <span id="radVal">3.0</span></label>
+            <input type="range" id="radius" min="5" max="80" value="30" />
+          </div>
+          <div class="demo__control demo__control--row">
+            <label class="demo__checkbox">
+              <input type="checkbox" id="showRegions" checked /> Color regions
+            </label>
+            <label class="demo__checkbox">
+              <input type="checkbox" id="showMesh" checked /> Show neuron mesh
+            </label>
+          </div>
+
+          <div class="demo__buttons">
+            <button class="btn btn--primary btn--sm" id="trainBtn">▶ Train</button>
+            <button class="btn btn--ghost btn--sm" id="pauseBtn">Pause</button>
+            <button class="btn btn--ghost btn--sm" id="resetBtn">Reset</button>
+          </div>
+          <div class="demo__buttons">
+            <button class="btn btn--ghost btn--sm" id="blobBtn">Random clusters</button>
+            <button class="btn btn--ghost btn--sm" id="ringBtn">Ring shape</button>
+            <button class="btn btn--ghost btn--sm" id="clearBtn">Clear points</button>
+          </div>
+
+          <div class="demo__stats">
+            <div><span id="iterStat">0</span><small>iterations</small></div>
+            <div><span id="ptStat">0</span><small>data points</small></div>
+            <div><span id="errStat">—</span><small>quantization err</small></div>
+          </div>
+          <p class="demo__note">Pure vanilla JavaScript &amp; Canvas — no libraries. The algorithm runs entirely in your browser.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel 2: live Streamlit app -->
+    <div class="demo-panel" id="tab-live" role="tabpanel">
+      <p class="demo__intro">
+        The real Streamlit app I built: upload a CSV, map your columns, choose parameters, and run the
+        actual <strong>RepSC-SOM</strong> pipeline — baselines, embeddings, and region growing included.
+      </p>
+      <div class="demo__app">
+        <div class="demo__app-bar">
+          <span class="demo__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="demo__app-url">regionalizationmobinanoorani.streamlit.app</span>
+          <a href="https://regionalizationmobinanoorani.streamlit.app/" target="_blank" rel="noopener" class="demo__app-open">Open in new tab ↗</a>
+        </div>
+        <iframe class="demo__iframe" src="https://regionalizationmobinanoorani.streamlit.app/?embed=true"
+                title="Regionalization Studio — live RepSC-SOM app" loading="lazy"></iframe>
+      </div>
+      <p class="demo__note">
+        The live app runs on Streamlit's free tier — if it has gone to sleep, it may take ~30&nbsp;seconds to
+        wake up. If the frame stays blank,
+        <a href="https://regionalizationmobinanoorani.streamlit.app/" target="_blank" rel="noopener">open it in a new tab ↗</a>.
+      </p>
+    </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <span class="section__ghost" data-parallax="0.12" aria-hidden="true">07</span>
+    <div class="section__head reveal reveal--left">
+      <span class="section__num">07</span>
+      <h2 class="section__title">Technical skills</h2>
+    </div>
+    <div class="skills reveal">
+      <div class="skills__group">
+        <h3>Languages</h3>
+        <div class="chips"><span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML/CSS</span></div>
+      </div>
+      <div class="skills__group">
+        <h3>ML / DL Frameworks</h3>
+        <div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>HuggingFace</span><span>OpenCV</span></div>
+      </div>
+      <div class="skills__group">
+        <h3>AI Systems</h3>
+        <div class="chips"><span>Agentic AI</span><span>RAG</span><span>Multimodal</span><span>LLM Fine-tuning</span><span>RL / GRPO</span><span>VLMs</span></div>
+      </div>
+      <div class="skills__group">
+        <h3>Infrastructure</h3>
+        <div class="chips"><span>Multi-GPU HPC (SLURM)</span><span>CUDA</span><span>vLLM</span><span>FlashAttention</span><span>FSDP</span><span>Ray</span><span>FAISS</span></div>
+      </div>
+      <div class="skills__group">
+        <h3>Tools</h3>
+        <div class="chips"><span>Git</span><span>Jupyter</span><span>Weights &amp; Biases</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--alt contact" id="contact">
+    <span class="section__ghost" data-parallax="0.12" aria-hidden="true">08</span>
+    <div class="section__head reveal reveal--left">
+      <span class="section__num">08</span>
+      <h2 class="section__title">Get in touch</h2>
+    </div>
+    <div class="contact__inner reveal">
+      <span class="contact__badge"><span class="status-dot"></span> Available for 2026 PhD positions</span>
+      <p class="contact__lead">
+        I'm always open to <strong>research collaborations</strong>, <strong>PhD opportunities</strong>,
+        and good conversations about reasoning-capable, multimodal AI. Whether you have a project in
+        mind or just want to talk shop — I'd love to hear from you, and I usually reply within a day.
+      </p>
+
+      <div class="contact__email-card">
+        <div>
+          <span class="contact__email-label">Email me directly</span>
+          <a href="mailto:s.noorani@ufl.edu" class="contact__email grad-text">s.noorani@ufl.edu</a>
+        </div>
+        <button class="contact__copy" id="copyEmail" data-email="s.noorani@ufl.edu" aria-label="Copy email address">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <span class="contact__copy-text">Copy</span>
+        </button>
+      </div>
+
+      <div class="contact__methods">
+        <a class="contact-method" href="mailto:s.noorani@ufl.edu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 6 10 7L22 6"></path></svg>
+          <span>Email</span>
+        </a>
+        <a class="contact-method" href="https://www.linkedin.com/in/mobina-noorani" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.99H5.67v8.35h2.67zM7 8.82a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.52v-4.58c0-2.45-1.31-3.59-3.06-3.59-1.41 0-2.04.78-2.39 1.32v-1.13h-2.67c.04.75 0 8.35 0 8.35h2.67v-4.66c0-.24.02-.48.09-.65.19-.48.63-.97 1.36-.97.96 0 1.34.73 1.34 1.8v4.48h2.67z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="contact-method" href="https://github.com/mobinanoorany" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 2.5-.34c.85 0 1.71.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.59.69.49A10.27 10.27 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="contact-method" href="https://scholar.google.com/citations?user=9ZJQCWoAAAAJ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z"></path><path d="M6 11.5V16c0 1.1 2.7 2.5 6 2.5s6-1.4 6-2.5v-4.5"></path><path d="M22 9v5"></path></svg>
+          <span>Scholar</span>
+        </a>
+        <a class="contact-method" href="assets/Mobina_Noorani_CV.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path><path d="M9 13h6M9 17h6M9 9h1"></path></svg>
+          <span>Résumé / CV</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Mobina Noorani · Built with vanilla HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/som-demo.js"></script>
+</body>
+</html>
