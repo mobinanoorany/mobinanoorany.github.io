@@ -391,12 +391,13 @@
     </p>
 
     <div class="demo-tabs reveal" role="tablist">
-      <button class="demo-tab is-active" data-tab="quick" role="tab" aria-selected="true">⚡ Quick browser demo</button>
+      <button class="demo-tab is-active" data-tab="video" role="tab" aria-selected="true">🎬 Video walkthrough</button>
+      <button class="demo-tab" data-tab="quick" role="tab" aria-selected="false">⚡ Quick browser demo</button>
       <button class="demo-tab" data-tab="live" role="tab" aria-selected="false">▶ Full live app</button>
     </div>
 
     <!-- Panel 1: quick JS demo -->
-    <div class="demo-panel is-active" id="tab-quick" role="tabpanel">
+    <div class="demo-panel" id="tab-quick" role="tabpanel">
       <div class="demo">
         <div class="demo__canvas-wrap">
           <canvas id="somCanvas" width="640" height="480"></canvas>
@@ -467,6 +468,20 @@
         <a href="https://regionalizationmobinanoorani.streamlit.app/" target="_blank" rel="noopener">open it in a new tab ↗</a>.
       </p>
     </div>
+    <!-- Panel 3: video walkthrough -->
+    <div class="demo-panel is-active" id="tab-video" role="tabpanel">
+      <p class="demo__intro">
+        A recorded walkthrough of the <strong>RepSC-SOM</strong> regionalization pipeline — from data
+        upload through region-growing refinement and hotspot detection.
+      </p>
+      <div class="demo__video-wrap">
+        <video class="demo__video" controls preload="metadata" poster="">
+          <source src="assets/work-demo.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </div>
+    </div>
+
     </div>
   </section>
 
